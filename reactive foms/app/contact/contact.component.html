@@ -1,0 +1,40 @@
+<div class="container">
+    <h1>Contact  form</h1>
+    <form class="form" [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+      <h3 *ngIf="success"> The Form is valid now!</h3>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" formControlName="name"><br>
+        <div *ngIf="submitted && messageForm.controls.name.errors">
+          <div *ngIf="messageForm.controls.name.errors.required">Put Your Name!</div>
+        </div>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="text" formControlName="email"> <br>
+        <div *ngIf="submitted && messageForm.controls.email.errors">
+            <div *ngIf="messageForm.controls.email.errors.required">Put Your Email!</div>
+          </div>
+      </div>
+      <div>
+        <label>Message</label>
+        <textarea formControlName="message" cols="30" rows="10"></textarea>
+        <div *ngIf="submitted && messageForm.controls.message.errors">
+          <div *ngIf="messageForm.controls.message.errors.required"></div>
+        </div>
+      </div>
+      <div>
+        <button>Submit Form</button>
+      </div>
+    </form>
+    <div *ngIf="submitted">
+      <b>Name:</b>
+      <div>{{messageForm.controls.name.value}}</div>
+
+      <b>Email: </b>
+      <div>{{messageForm.controls.email.value}}</div>
+      
+      <b>Message: </b>
+      <div>{{messageForm.controls.message.value}}</div>
+    </div>
+</div>
