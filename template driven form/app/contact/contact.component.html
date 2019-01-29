@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Contact  form</h1>
+    <form #f="ngForm" class="form" novalidate>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" [(ngModel)]="model.name" #name="ngModel" [ngClass]="{'is-invalid' :f.submitted && name.invalid}" id="name" name="name" required><br>
+        <div class="invalid-feedback">
+          Name is required!
+        </div>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"  [(ngModel)]="model.email" #email="ngModel" [ngClass]="{'is-invalid' :f.submitted && email.invalid}"> <br>
+        <div *ngIf="email.errors.required" class="invalid-feedback">
+          Email is required!
+        </div>
+        <div *ngIf="email.errors.email" class="invalid-feedback">
+          Email is not correct
+        </div>
+      </div>
+      <div>
+        <label>Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <div class="invalid-feedback">
+          Message bar can't be Empty!
+        </div>
+      </div>
+      <div>
+        <button>Submit Form</button>
+      </div>
+    </form>
+</div>
