@@ -19,23 +19,21 @@ By the end of this course, you’ll have a command over Angular & TypeScript and
 ## Instructions and Navigation
 ### Assumed Knowledge
 To fully benefit from the coverage included in this course, you will need:<br/>
-To fully benefit from the coverage included in this course, you will need:
-●	Prior working knowledge of the JavaScript (ES5) language
-●	An understanding of basic HTML and CSS syntax.
-●	Basic understanding of oop concept
-●	(Optional) Experience with relational databases and table data structures
+●	Prior working knowledge of the JavaScript (ES5) language<br/>
+●	An understanding of basic HTML and CSS syntax.<br/>
+●	Basic understanding of oop concept<br/>
+●	(Optional) Experience with relational databases and table data structures<br/>
 
-### Technical Requirements
+### Technical Requirements<br/>
 This course has the following software requirements:<br/>
-This course has the following software requirements:
-●	An editor like Atom, Sublime Text or Visual Studio Code
+●	An editor like Atom, Sublime Text or Visual Studio Code<br/>
 
-This course has been tested on the following system configuration:
-●	OS: Windows 7
-●	Processor: Dual Core 3.0 Ghz
-●	Memory: 4GB
-●	Hard Disk Space: 200MB
-●	Video Card: 256MB Video Memory
+This course has been tested on the following system configuration:<br/>
+●	OS: Windows 7<br/>
+●	Processor: Dual Core 3.0 Ghz<br/>
+●	Memory: 4GB<br/>
+●	Hard Disk Space: 200MB<br/>
+●	Video Card: 256MB Video Memory<br/>
 
 
 ## Related Products
